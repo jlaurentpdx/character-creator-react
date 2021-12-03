@@ -60,4 +60,5 @@ This app is based on [this complete project](https://alchemycodelab.github.io/we
 - [ ] `<Feature name="..."/>` should include dropdowns for corresponding `name` prop
 - [ ] `<Phrase />` should allow user input of catchphrases
 - [ ] `<Display name="..." />` should display Stats, Phrases, and any "feature" using destructuring
+- [ ] Write and pass snapshot tests for presentational components
 - [ ] Replace template in `<Main>` with working components
