@@ -1,25 +1,54 @@
-# Alchemy React Base Template
+# Character Creator in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is this thing?
 
-Use this template for all your "from scratch" deliverables. To start, simply run
+This simple React app is being designed for users who want to create their own character. Users can select a head, middle, and bottom for their character from existing assets and give their characters a catchphrase.
 
-- `npm install`
-- `npm start`
+## Why are you making this?
 
-## Available Scripts
+I am making this app to practice the use and understanding of components in React with fellow students of Alchemy Code Lab's September 2021 cohort. The app must meet certain requirements, listed below.
 
-In the project directory, you can run:
+## What are the requirements of this app?
 
-### `npm start`
+From the assignment:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> ## Description
+>
+> For this app, we’ll be taking an existing HTML / Vanilla JS project and converting it to React using props and state. The original code is here Create a new React app using the react template
+>
+> ## Acceptance Criteria
+>
+> - [ ] Users should be able to update the characters head, torso and legs using select menus
+> - [ ] Users should be able to add catchphrases for their character which get listed on the page
+> - [ ] The app should utilize the presentational / container component pattern. Use as your container component and make presentational components in a components directory
+> - [ ] Presentational components should have snapshot tests
+>
+> ## Rubric
+>
+> | Task                                                                                 | Points |
+> | ------------------------------------------------------------------------------------ | ------ |
+> | Users are able to update the characters features (2 points per feature)              | 6      |
+> | Users are able to add catchphrases                                                   | 4      |
+> | App is separated into presentational / container components that pass state as props | 4      |
+> | Snapshot tests                                                                       | 4      |
+> | Deployed on Netlify, CI Passing                                                      | 2      |
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Planning
+
+This app is based on [this complete project](https://alchemycodelab.github.io/web-01-character-designer/).
+
+## What files should be created or imported?
+
+- [x] Import character assets (`public/char_images/...`)
+- [x] Import background image (`src/bg.jpeg`)
+- [x] Create `src/components/...`
+  - [x] `<Main />`
+  - [x] `<Feature />`
+  - [x] `<Phrase />`
+  - [x] `<Counter />`
+  - [x] `<DisplayChar />`
+- [x] Create `src/App.test.js`
