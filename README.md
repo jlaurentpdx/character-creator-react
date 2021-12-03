@@ -47,8 +47,17 @@ This app is based on [this complete project](https://alchemycodelab.github.io/we
 - [x] Import background image (`src/bg.jpeg`)
 - [x] Create `src/components/...`
   - [x] `<Main />`
-  - [x] `<Feature />`
+  - [x] `<Feature />` (props: `name` ["Head", "Middle", "Body"])
   - [x] `<Phrase />`
-  - [x] `<Counter />`
-  - [x] `<DisplayChar />`
+  - [x] `<CreateStatsString />`
+  - [x] `<Display />` (props: `feature` ["Head", "Middle", "Body"], `phrases`, `stats`)
 - [x] Create `src/App.test.js`
+- [ ] _Import CSS ...?_
+
+## What features need to be implemented?
+
+- [x] Build out template in `<Main />`
+- [ ] `<Feature name="..."/>` should include dropdowns for corresponding `name` prop
+- [ ] `<Phrase />` should allow user input of catchphrases
+- [ ] `<Display name="..." />` should display Stats, Phrases, and any "feature" using destructuring
+- [ ] Replace template in `<Main>` with working components
