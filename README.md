@@ -62,3 +62,5 @@ This app is based on [this complete project](https://alchemycodelab.github.io/we
 - [ ] `<Display name="..." />` should display Stats, Phrases, and any "feature" using destructuring
 - [ ] Write and pass snapshot tests for presentational components
 - [ ] Replace template in `<Main>` with working components
+- [x] Upload to Netlify, then provide link in GitHub
+- [ ] ...
