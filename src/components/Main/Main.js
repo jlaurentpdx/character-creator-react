@@ -1,13 +1,22 @@
+import { useState } from 'react';
 import './Main.css';
+import Feature from '../Feature/Feature';
 
 export default function Main() {
+  const [selection, setSelection] = useState('bird');
+
+  const headOptions = ['bird', 'dog', 'duck', 'horse'];
+
   return (
     <main>
       <div className="left">
         <div className="picker">
-          {/* Feature : Head */}
-          {/* Feature : Middle */}
-          {/* Feature : Bottom */}
+          <Feature
+            name="Head"
+            selection={selection}
+            options={headOptions}
+            setSelection={setSelection}
+          />
 
           {/* Phrase */}
           {/* Display : Phrases */}
