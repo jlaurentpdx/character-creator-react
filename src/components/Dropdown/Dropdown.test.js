@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Feature from './Feature';
+import Feature from './Dropdown';
 
 test('renders a Feature called Head', () => {
   const options = ['bird', 'dog', 'duck', 'horse'];
