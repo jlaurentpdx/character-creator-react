@@ -1,5 +1,6 @@
 import './Main.css';
 import Dropdown from '../Dropdown/Dropdown';
+import SubmitInput from '../SubmitInput/SubmitInput';
 
 export default function Main() {
   const dropdownOptions = [
@@ -16,7 +17,7 @@ export default function Main() {
           <Dropdown name="Middle" options={dropdownOptions[1]} />
           <Dropdown name="Pants" options={dropdownOptions[2]} />
 
-          {/* Phrase */}
+          <SubmitInput label="Add a catch phrase" buttonText="Add" />
           {/* Display : Phrases */}
         </div>
         <div className="stats">{/* Display: Stats */}</div>
