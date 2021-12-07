@@ -1,9 +1,7 @@
 import './Dropdown.css';
-import { useState } from 'react';
 
-export default function Feature({ name, options }) {
-  const defaultOption = options.find((item) => item === []);
-  const [selection, setSelection] = useState(defaultOption);
+export default function Dropdown({ name, selection, options, setSelection }) {
+  //   const defaultOption = options.find((item) => item === []);
 
   return (
     <label>
