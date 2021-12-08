@@ -10,9 +10,7 @@ export default function Main() {
     ['blue', 'dog', 'leg', 'white'],
   ];
 
-  // Phrase list
   const [catchphraseList, setCatchphraseList] = useState([]);
-
   const [headSelection, setHeadSelection] = useState('bird');
   const [midSelection, setMidSelection] = useState('blue');
   const [pantsSelection, setPantsSelection] = useState('blue');
@@ -49,13 +47,16 @@ export default function Main() {
             setInputText={setInputText}
             setCatchphraseList={setCatchphraseList}
           />
-          {/* Display : Phrases */}
         </div>
-        <div className="stats">{/* Display: Stats */}</div>
+        <div className="stats">
+          {catchphraseList.map((item) => (
+            <p key={item}>{item}</p>
+          ))}
+          {/* Display: Stats */}
+        </div>
       </div>
       <div className="right">
         <div className="character">
-          {/* Display : Feature : Head */}
           {/* Display : Feature : Middle */}
           {/* Display : Feature : Body */}
         </div>
