@@ -14,6 +14,9 @@ export default function Main() {
   const [headSelection, setHeadSelection] = useState('bird');
   const [midSelection, setMidSelection] = useState('blue');
   const [pantsSelection, setPantsSelection] = useState('blue');
+  const [headCount, setHeadCount] = useState(0);
+  const [midCount, setMidCount] = useState(0);
+  const [pantsCount, setPantsCount] = useState(0);
   const [inputText, setInputText] = useState('');
 
   return (
@@ -49,6 +52,10 @@ export default function Main() {
           />
         </div>
         <div className="stats">
+          <p className="display-stats hidden">
+            You have changed the head {headCount} times, the body {midCount} times, and the pants{' '}
+            {pantsCount} times. And nobody can forget your character&apos;s classic catchphrases:
+          </p>
           {catchphraseList.map((item) => (
             <p key={item}>{item}</p>
           ))}
@@ -57,6 +64,7 @@ export default function Main() {
       </div>
       <div className="right">
         <div className="character">
+          <p>Some filler text</p>
           {/* Display : Feature : Middle */}
           {/* Display : Feature : Body */}
         </div>
