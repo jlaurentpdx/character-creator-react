@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './Main.css';
-import Dropdown from '../Dropdown/Dropdown';
-import Catchphrase from '../Catchphrase/Catchphrase';
-import Display from '../Display/Display';
-import CatchphraseList from '../CatchphraseList/CatchphraseList';
+import Dropdown from '../../components/Dropdown/Dropdown';
+import Catchphrase from '../../components/Catchphrase/Catchphrase';
+import Display from '../../components/Display/Display';
+import CatchphraseList from '../../components/CatchphraseList/CatchphraseList';
 
 export default function Main() {
   const dropdownOptions = [
