@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render stats and a list of catchphrases 1`] = `
+<div>
+  <div
+    class="stats"
+  >
+    <p
+      class="display-stats hidden"
+    >
+      You have changed the head 
+      1
+       times, the body 
+      2
+       times, and the pants
+       
+      0
+       times. And nobody can forget your character's classic catchphrases:
+    </p>
+    <p
+      class="catchphrase"
+    >
+      oh gee
+    </p>
+    <p
+      class="catchphrase"
+    >
+      testing is a hoot
+    </p>
+  </div>
+</div>
+`;

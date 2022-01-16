@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display should render a div with image information 1`] = `
+<div>
+  <div
+    class="bg head"
+    role="img"
+    style="background-image: url(/char_images/bird-head.png);"
+  />
+</div>
+`;

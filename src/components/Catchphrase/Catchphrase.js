@@ -1,5 +1,3 @@
-import './Catchphrase.css';
-
 export default function Catchphrase({
   label,
   inputText,

@@ -1,5 +1,3 @@
-import './Dropdown.css';
-
 export default function Dropdown({ name, selection, options, setSelection, setCount }) {
   //   const defaultOption = options.find((item) => item === []);
 
