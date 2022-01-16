@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Main.css';
 import Dropdown from '../Dropdown/Dropdown';
 import Catchphrase from '../Catchphrase/Catchphrase';
+import Display from '../Display/Display';
 
 export default function Main() {
   const dropdownOptions = [
@@ -28,19 +29,24 @@ export default function Main() {
             selection={headSelection}
             options={dropdownOptions[0]}
             setSelection={setHeadSelection}
+            setCount={setHeadCount}
           />
           <Dropdown
             name="Middle"
             selection={midSelection}
             options={dropdownOptions[1]}
             setSelection={setMidSelection}
+            setCount={setMidCount}
           />
           <Dropdown
             name="Pants"
             selection={pantsSelection}
             options={dropdownOptions[2]}
             setSelection={setPantsSelection}
+            setCount={setPantsCount}
           />
+
+          {console.log(headSelection)}
 
           <Catchphrase
             label="Add a catch phrase"
@@ -59,12 +65,11 @@ export default function Main() {
           {catchphraseList.map((item) => (
             <p key={item}>{item}</p>
           ))}
-          {/* Display: Stats */}
         </div>
       </div>
       <div className="right">
         <div className="character">
-          <p>Some filler text</p>
+          <Display selection={headSelection} feature="head" />
           {/* Display : Feature : Middle */}
           {/* Display : Feature : Body */}
         </div>
