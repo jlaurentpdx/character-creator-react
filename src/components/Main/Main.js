@@ -3,6 +3,7 @@ import './Main.css';
 import Dropdown from '../Dropdown/Dropdown';
 import Catchphrase from '../Catchphrase/Catchphrase';
 import Display from '../Display/Display';
+import CatchphraseList from '../CatchphraseList/CatchphraseList';
 
 export default function Main() {
   const dropdownOptions = [
@@ -39,7 +40,7 @@ export default function Main() {
             setCount={setMidCount}
           />
           <Dropdown
-            name="Pants"
+            name="Bottom"
             selection={pantsSelection}
             options={dropdownOptions[2]}
             setSelection={setPantsSelection}
@@ -47,7 +48,7 @@ export default function Main() {
           />
 
           <Catchphrase
-            label="Add a catch phrase"
+            label=" Add a catch phrase "
             inputText={inputText}
             buttonText="Add"
             catchphraseList={catchphraseList}
@@ -55,17 +56,9 @@ export default function Main() {
             setCatchphraseList={setCatchphraseList}
           />
         </div>
-        <div className="stats">
-          <p className="display-stats hidden">
-            You have changed the head {headCount} times, the body {midCount} times, and the pants{' '}
-            {pantsCount} times. And nobody can forget your character&apos;s classic catchphrases:
-          </p>
-          {catchphraseList.map((item) => (
-            <p key={item} className="catchphrase">
-              {item}
-            </p>
-          ))}
-        </div>
+        {catchphraseList.length > 0 ? (
+          <CatchphraseList {...{ headCount, midCount, pantsCount, catchphraseList }} />
+        ) : null}
       </div>
       <div className="right">
         <div className="character">

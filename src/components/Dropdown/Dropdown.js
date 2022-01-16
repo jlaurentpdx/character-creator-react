@@ -10,7 +10,7 @@ export default function Dropdown({ name, selection, options, setSelection, setCo
 
   return (
     <label>
-      {name}
+      {name}{' '}
       <select value={selection} onChange={changeHandler}>
         {options.map((item) => (
           <option key={item} value={item}>
