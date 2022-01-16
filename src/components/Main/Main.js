@@ -46,8 +46,6 @@ export default function Main() {
             setCount={setPantsCount}
           />
 
-          {console.log(headSelection)}
-
           <Catchphrase
             label="Add a catch phrase"
             inputText={inputText}
@@ -63,15 +61,17 @@ export default function Main() {
             {pantsCount} times. And nobody can forget your character&apos;s classic catchphrases:
           </p>
           {catchphraseList.map((item) => (
-            <p key={item}>{item}</p>
+            <p key={item} className="catchphrase">
+              {item}
+            </p>
           ))}
         </div>
       </div>
       <div className="right">
         <div className="character">
           <Display selection={headSelection} feature="head" />
-          {/* Display : Feature : Middle */}
-          {/* Display : Feature : Body */}
+          <Display selection={midSelection} feature="middle" />
+          <Display selection={pantsSelection} feature="pants" />
         </div>
       </div>
     </main>
