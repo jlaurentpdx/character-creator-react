@@ -52,15 +52,14 @@ This app is based on [this complete project](https://alchemycodelab.github.io/we
   - [x] `<CreateStatsString />`
   - [x] `<Display />` (props: `feature` ["Head", "Middle", "Body"], `phrases`, `stats`)
 - [x] Create `src/App.test.js`
-- [ ] _Import CSS ...?_
 
 ## What features need to be implemented?
 
 - [x] Build out template in `<Main />`
 - [x] `<Feature name="..."/>` should include dropdowns for corresponding `name` prop
-- [ ] `<Phrase />` should allow user input of catchphrases
-- [ ] `<Display name="..." />` should display Stats, Phrases, and any "feature" using destructuring
-- [ ] Write and pass snapshot tests for presentational components
-- [ ] Replace template in `<Main>` with working components
+- [x] `<Phrase />` should allow user input of catchphrases
+- [x] `<Display name="..." />` should display Stats, Phrases, and any "feature" using destructuring
+- [x] Write and pass snapshot tests for presentational components
+- [x] Replace template in `<Main>` with working components
 - [x] Upload to Netlify, then provide link in GitHub
 - [ ] ...
